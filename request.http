@@ -1,0 +1,56 @@
+# REGISTER
+POST http://localhost:5000/api/users/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Obito",
+    "email" : "obito@manga.com",
+    "phone" : "98563215",
+    "password" : "00000000"
+}
+
+###
+
+# LOGIN
+POST http://localhost:5000/api/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email" : "sasuke@manga.com",
+    "password" : "00000000"
+}
+
+###
+
+# GET ALL
+
+GET http://localhost:5000/api/users HTTP/1.1
+Content-Type: application/json
+
+###
+
+# GET BY _id
+GET http://localhost:5000/api/users/625170cd8976760464642876 HTTP/1.1
+Content-Type: application/json
+
+###
+
+# UPDATE
+PUT http://localhost:5000/api/users/624c650985fcbba5b91a0116 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Sasuké",
+    "email" : "kratos@god.war",
+    "phone" : "96857414",
+    "password" : "00000000"
+}
+
+
+###
+
+# DELETE
+DELETE  http://localhost:5000/api/users/625170cd8976760464642876 HTTP/1.1
+Content-Type: application/json
+
+###
